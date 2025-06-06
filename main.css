@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ancizar Serif", serif;
+}
+
+
+.container{
+    width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+    justify-content: center;
+    background-color: #dddcdc;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 50px;
+}
+
+header{
+    padding: 20px;
+    border-bottom: 3px solid rgb(82, 82, 82);
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+
+button{
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+input {
+    border: 0;
+    outline: none; 
+    border-bottom: 1px solid #000000;
+    padding: 8px;
+    background: none;
+}
+
+#lista-de-tarefas li{
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+    
+}
+
+.tarefa-concluida {
+    text-decoration: line-through;
+    color: green;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+ul#lista-de-tarefas {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.botao-excluir{
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding: 0;
+}
+
+.botao-excluir img{
+    width: 16px;
+    height: 16px;
+}
