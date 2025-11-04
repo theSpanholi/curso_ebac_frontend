@@ -1,0 +1,92 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #5b5847;
+}
+header {
+  background-color: #fffec6;
+  width: 100%;
+}
+header .container {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  padding-top: 10px ;
+  margin-bottom: 10px;
+}
+header nav ul.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+header nav ul.menu li a {
+  color: #c7d1af;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+header nav ul.menu li a:hover {
+  color: #f4f6f0;
+}
+#produtos h2 {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  color: #c7d1af;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  justify-content: center;
+}
+.product-item {
+  background-color: #5c554d;
+  border: 1px solid #fffec6;
+  border-radius: 8px;
+  padding: 15px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 2px 5px #fffec6;
+  transition: transform 0.2s ease;
+  color: #c7d1af;
+}
+.product-item:hover {
+  transform: translateY(-5px);
+}
+.product-item img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.product-item h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+.product-item p {
+  font-size: 14px;
+  color: #de733e;
+}
+.product-item .product-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #fffec6;
+  color: #de733e;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.product-item .product-button:hover {
+  background-color: #fffd93;
+}

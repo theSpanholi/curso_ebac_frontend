@@ -1,0 +1,116 @@
+@import "mapas.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: @colors[backgroundColor];
+}
+
+header{
+    background-color: @colors[headerColor];
+    width: 100%;
+
+    .container{
+        max-width: 70%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    img {
+        padding-top: 10px ;
+        margin-bottom: 10px;
+    }
+
+
+    nav{
+        ul.menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+
+            li a{
+                color: @colors[textColor1];
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: lighten(@colors[textColor1], 20%);
+                }
+            }
+        }
+    }
+}
+
+#produtos h2{
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    color: @colors[textColor1];
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+.product-item{
+    background-color: rgb(92, 85, 77);
+    border: 1px solid @colors[headerColor];
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 2px 5px @colors[headerColor];
+    transition: transform 0.2s ease;
+    color: @colors[textColor1];
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    img{
+        max-width: 100%;
+        border-radius: 4px;
+    }
+
+    h4 {
+        margin: 10px 0 5px;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+        color: @colors[textColor2];
+    }
+
+    .product-button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        background-color: @colors[headerColor];
+        color: @colors[textColor2];
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+
+        &:hover {
+            background-color: darken(@colors[headerColor], 10%);
+        }
+    }
+}
